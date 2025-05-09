@@ -1,0 +1,12 @@
+.buttons {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.buttons>button {
+  font-size: 60px;
+  background: none;
+  border: none;
+  padding: 20px 40px 20px 40px;
+}
