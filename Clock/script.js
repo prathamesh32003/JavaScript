@@ -28,6 +28,12 @@ let months = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
+  day.style.color = `rgb(${[1, 2, 3].map((x) => (Math.random() * 256) | 0)})`;
+  date.style.color = `rgb(${[1, 2, 3].map((x) => (Math.random() * 256) | 0)})`;
+  hour.style.color =
+    minutes.style.color =
+    seconds.style.color =
+      `rgb(${[1, 2, 3].map((x) => (Math.random() * 256) | 0)})`;
   setClockTime();
 });
 
@@ -39,7 +45,8 @@ function setClockTime() {
     " " +
     currentTime.getDate() +
     ", " +
-    currentTime.getFullYear();
+    currentTime.getFullYear() +
+    ", ";
   hour.textContent = currentTime.getHours() + ":";
   seconds.textContent = currentTime.getSeconds();
   minutes.textContent = currentTime.getMinutes() + ":";

@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+.clock {
+  text-align: center;
+  padding-top: 90px;
+}
+
+span {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+}
